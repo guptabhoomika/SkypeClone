@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:skype_clone/screens/chatlistScreen.dart';
 import 'package:skype_clone/utils/universal_vars.dart';
 import '../resources/firebase-repo.dart';
 class HomeScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: UniversalVariables.blackColor,
       body: PageView(
         children: <Widget>[
-          Center(child: Text("Chat List Screen"),),
+          Center(child: ChatList(),),
           Center(child: Text("Call Logs"),),
           Center(child: Text("Contacts"),),
 
