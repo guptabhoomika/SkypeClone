@@ -28,6 +28,8 @@ dependencies:
   firebase_auth: 0.15.5+3
   google_sign_in: 4.2.0
   shimmer:
+  gradient_app_bar: ^0.0.1
+  emoji_picker: 0.1.0
 
 dev_dependencies:
   flutter_test:

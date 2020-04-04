@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:skype_clone/screens/searchScreen.dart';
 import './resources/firebase-repo.dart';
 import './screens/homescreen.dart';
 import './screens/login.dart';
@@ -23,6 +24,13 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: "Skype_Clone",
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark
+      ),
+      initialRoute: '/',
+      routes: {
+        '/searchScreen' : (context) => SearchScreen(),
+      },
       home: FutureBuilder(
         future: _firebaserepo.getUser(),
         builder:  (context, AsyncSnapshot<FirebaseUser> snapshot) {

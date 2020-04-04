@@ -35,7 +35,7 @@ class _ChatListState extends State<ChatList> {
       title: UserCircle(text: name),
       centerTile: true,
       actions: <Widget>[
-        IconButton(icon: Icon(Icons.search), onPressed: (){}),
+        IconButton(icon: Icon(Icons.search), onPressed: (){Navigator.pushNamed(context, "/searchScreen");}),
         IconButton(icon: Icon(Icons.more_vert), onPressed: (){})
       ],
 
